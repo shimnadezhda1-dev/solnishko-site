@@ -7,8 +7,8 @@ window.SITE_CONFIG = {
   supportEmail: "solnishko.app@mail.ru",
   sellerName: "Шимченко Надежда Владимировна",
   sellerStatus: "плательщик налога на профессиональный доход",
-  sellerInn: "ЗАПОЛНИТЬ_РЕАЛЬНЫЙ_ИНН",
-  contactPhone: "",
+  sellerInn: "ИНН 263102448753",
+  contactPhone: "+79620244929",
   productAge: "4–6 лет",
   purchaseStatus: "coming-soon",
   purchaseButtonText: "Покупка будет доступна в приложении"

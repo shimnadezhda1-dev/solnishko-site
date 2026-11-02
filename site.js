@@ -5,8 +5,9 @@
     return String(value == null ? "" : value).trim();
   }
 
-  function isInnReady(value) {
-    return /^\d{10,12}$/.test(text(value).replace(/\s/g, ""));
+  function innDigits(value) {
+    var digits = text(value).replace(/\D/g, "");
+    return /^\d{10,12}$/.test(digits) ? digits : "";
   }
 
   function isPhoneReady(value) {
@@ -24,16 +25,21 @@
   }
 
   Object.keys(cfg).forEach(function (key) {
+    var value = cfg[key];
+    if (key === "sellerInn") {
+      var digits = innDigits(value);
+      if (digits) value = digits;
+    }
     document.querySelectorAll('[data-bind="' + key + '"]').forEach(function (el) {
-      fillBind(el, cfg[key]);
+      fillBind(el, value);
     });
     document.querySelectorAll('[data-bind-mailto="' + key + '"]').forEach(function (el) {
-      fillBind(el, cfg[key]);
+      fillBind(el, value);
     });
   });
 
   document.querySelectorAll("[data-show=inn]").forEach(function (el) {
-    el.hidden = !isInnReady(cfg.sellerInn);
+    el.hidden = !innDigits(cfg.sellerInn);
   });
   document.querySelectorAll("[data-show=phone]").forEach(function (el) {
     el.hidden = !isPhoneReady(cfg.contactPhone);
