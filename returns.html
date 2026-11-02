@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Условия возврата | Solnishko.app</title>
+    <meta
+      name="description"
+      content="Условия возврата за приложение «Весёлый алфавит»: запрос рассматривается по законодательству РФ. Контакт solnishko.app@mail.ru."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name" data-bind="brandName">Solnishko.app</span>
+      </a>
+    </header>
+
+    <main class="wrap doc">
+      <h1>Условия возврата</h1>
+      <p>
+        Запрос на возврат рассматривается в соответствии с законодательством РФ и обстоятельствами покупки. Автоматический
+        возврат без проверки не производится.
+      </p>
+
+      <h2>Как обратиться</h2>
+      <p>
+        Напишите на <a data-bind-mailto="supportEmail" href="mailto:solnishko.app@mail.ru">solnishko.app@mail.ru</a> и укажите:
+      </p>
+      <ul class="list">
+        <li>e-mail, использованный при покупке;</li>
+        <li>дату оплаты;</li>
+        <li>сумму;</li>
+        <li>описание проблемы.</li>
+      </ul>
+
+      <h2>Техническая ошибка предоставления FULL</h2>
+      <p>
+        Если доступ FULL не был предоставлен из-за технической ошибки и проблема не может быть устранена, возврат
+        предусматривается после проверки обращения.
+      </p>
+      <p>
+        Стоимость полной версии составляет <span data-bind="price">599 ₽</span>, оплата разовая, без подписки.
+      </p>
+
+      <h2>Контакт</h2>
+      <p>
+        E-mail: <a data-bind-mailto="supportEmail" href="mailto:solnishko.app@mail.ru">solnishko.app@mail.ru</a>
+        <span data-show="phone" hidden><br />Телефон: <span data-bind="contactPhone"></span></span>
+      </p>
+    </main>
+
+    <footer class="site-footer wrap" id="contacts">
+      <ul class="footer-nav">
+        <li><a href="vesely-alfavit.html">Весёлый алфавит</a></li>
+        <li><a href="offer.html">Публичная оферта</a></li>
+        <li><a href="privacy.html">Политика обработки персональных данных</a></li>
+        <li><a href="returns.html">Условия возврата</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+      <div class="seller">
+        <p>
+          <strong>Продавец:</strong>
+          <span data-bind="sellerName">Шимченко Надежда Владимировна</span>, <span data-bind="sellerStatus">плательщик налога на профессиональный доход</span>
+        </p>
+        <p data-show="inn" hidden><strong>ИНН:</strong> <span data-bind="sellerInn"></span></p>
+        <p>
+          <strong>E-mail поддержки:</strong>
+          <a data-bind-mailto="supportEmail" href="mailto:solnishko.app@mail.ru">solnishko.app@mail.ru</a>
+        </p>
+        <p data-show="phone" hidden><strong>Телефон:</strong> <span data-bind="contactPhone"></span></p>
+      </div>
+    </footer>
+    <script src="site-config.js"></script>
+    <script src="site.js"></script>
+  </body>
+</html>

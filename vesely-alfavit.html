@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Весёлый алфавит — обучающая игра для детей | Solnishko.app</title>
+    <meta
+      name="description"
+      content="Весёлый алфавит — обучающая игра для детей 4–6 лет. Бесплатно буквы А–Д, полная версия А–Я — 599 ₽ один раз, без подписки и рекламы."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name" data-bind="brandName">Solnishko.app</span>
+      </a>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <p class="kicker" data-bind="brandName">Solnishko.app</p>
+        <h1 data-bind="productName">Весёлый алфавит</h1>
+        <p class="lead">
+          Обучающая игра для знакомства с русским алфавитом для детей <span data-bind="productAge">4–6 лет</span>
+        </p>
+        <p>
+          Игра помогает ребёнку знакомиться с буквами через короткие игровые задания, озвучку и систему наград.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>В приложении</h2>
+        <ul class="list">
+          <li>«Знакомство с буквой»</li>
+          <li>«Найди букву»</li>
+          <li>«Что начинается на букву»</li>
+          <li>«Послушай и выбери картинку»</li>
+          <li>звёзды и награды</li>
+          <li>коллекция наклеек</li>
+          <li>«Моя полянка»</li>
+          <li>озвучка</li>
+          <li>фоновая музыка</li>
+        </ul>
+
+        <div class="price-box">
+          <p>
+            <strong>Бесплатная пробная версия:</strong> бесплатно доступны буквы
+            <span data-bind="trialLetters">А–Д</span>.
+          </p>
+          <p class="price">
+            Полная версия <span data-bind="fullLetters">А–Я</span> —
+            <span data-bind="price">599 ₽</span> один раз.
+          </p>
+          <ul class="list">
+            <li><span data-bind="price">599 ₽</span> — разовая покупка;</li>
+            <li>без подписки;</li>
+            <li>без рекламы;</li>
+            <li>после подтверждения оплаты открывается полная версия;</li>
+            <li>повторно платить за восстановление ранее приобретённого FULL не нужно.</li>
+          </ul>
+          <p>
+            <span class="btn btn-disabled" data-purchase-button aria-disabled="true">Покупка будет доступна в приложении</span>
+          </p>
+          <p class="note">
+            Кнопка оплаты на сайте пока не активна. Покупка полной версии оформляется в приложении после запуска оплаты.
+          </p>
+        </div>
+
+        <h2>Как предоставляется полная версия</h2>
+        <p>
+          После успешной оплаты сервер подтверждает платёж и предоставляет покупателю право использования полной версии
+          приложения «<span data-bind="productName">Весёлый алфавит</span>».
+        </p>
+        <p>
+          Полная версия открывает буквы <span data-bind="fullLetters">А–Я</span> и функции, предназначенные для FULL.
+        </p>
+        <p>
+          Покупка привязывается к данным покупки взрослого пользователя и может быть восстановлена предусмотренным в
+          приложении способом.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer wrap" id="contacts">
+      <ul class="footer-nav">
+        <li><a href="vesely-alfavit.html">Весёлый алфавит</a></li>
+        <li><a href="offer.html">Публичная оферта</a></li>
+        <li><a href="privacy.html">Политика обработки персональных данных</a></li>
+        <li><a href="returns.html">Условия возврата</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+      <div class="seller">
+        <p>
+          <strong>Продавец:</strong>
+          <span data-bind="sellerName">Шимченко Надежда Владимировна</span>, <span data-bind="sellerStatus">плательщик налога на профессиональный доход</span>
+        </p>
+        <p data-show="inn" hidden><strong>ИНН:</strong> <span data-bind="sellerInn"></span></p>
+        <p>
+          <strong>E-mail поддержки:</strong>
+          <a data-bind-mailto="supportEmail" href="mailto:solnishko.app@mail.ru">solnishko.app@mail.ru</a>
+        </p>
+        <p data-show="phone" hidden><strong>Телефон:</strong> <span data-bind="contactPhone"></span></p>
+      </div>
+    </footer>
+    <script src="site-config.js"></script>
+    <script src="site.js"></script>
+  </body>
+</html>

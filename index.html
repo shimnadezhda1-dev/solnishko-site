@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Solnishko.app — добрые образовательные приложения для детей</title>
+    <meta
+      name="description"
+      content="Solnishko.app — добрые образовательные приложения для детей. Сейчас доступна игра «Весёлый алфавит»."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name" data-bind="brandName">Solnishko.app</span>
+      </a>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <p class="kicker" data-bind="brandName">Solnishko.app</p>
+        <h1>Добрые образовательные приложения для детей</h1>
+        <p class="lead">
+          Мы делаем спокойные игровые приложения, в которых ребёнок учится, а взрослый видит понятные условия покупки.
+        </p>
+      </section>
+
+      <article class="product-card">
+        <div>
+          <p class="kicker">Приложение</p>
+          <h2 data-bind="productName">Весёлый алфавит</h2>
+          <p>Обучающая игра для знакомства с русским алфавитом для детей <span data-bind="productAge">4–6 лет</span>.</p>
+        </div>
+        <p>
+          <a class="btn btn-primary" href="vesely-alfavit.html">Подробнее</a>
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer wrap" id="contacts">
+      <ul class="footer-nav">
+        <li><a href="vesely-alfavit.html">Весёлый алфавит</a></li>
+        <li><a href="offer.html">Публичная оферта</a></li>
+        <li><a href="privacy.html">Политика обработки персональных данных</a></li>
+        <li><a href="returns.html">Условия возврата</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+      <div class="seller">
+        <p>
+          <strong>Продавец:</strong>
+          <span data-bind="sellerName">Шимченко Надежда Владимировна</span>, <span data-bind="sellerStatus">плательщик налога на профессиональный доход</span>
+        </p>
+        <p data-show="inn" hidden><strong>ИНН:</strong> <span data-bind="sellerInn"></span></p>
+        <p>
+          <strong>E-mail поддержки:</strong>
+          <a data-bind-mailto="supportEmail" href="mailto:solnishko.app@mail.ru">solnishko.app@mail.ru</a>
+        </p>
+        <p data-show="phone" hidden><strong>Телефон:</strong> <span data-bind="contactPhone"></span></p>
+      </div>
+    </footer>
+    <script src="site-config.js"></script>
+    <script src="site.js"></script>
+  </body>
+</html>

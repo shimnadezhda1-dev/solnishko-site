@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Политика обработки персональных данных | Solnishko.app</title>
+    <meta
+      name="description"
+      content="Политика обработки персональных данных Solnishko.app: пробная версия без регистрации, e-mail взрослого покупателя только при покупке и восстановлении FULL."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name" data-bind="brandName">Solnishko.app</span>
+      </a>
+    </header>
+
+    <main class="wrap doc">
+      <h1>Политика обработки персональных данных</h1>
+
+      <h2>1. Оператор</h2>
+      <p>
+        Оператор персональных данных:
+        <span data-bind="sellerName">Шимченко Надежда Владимировна</span>,
+        <span data-bind="sellerStatus">плательщик налога на профессиональный доход</span>.
+      </p>
+      <p data-show="inn" hidden>ИНН: <span data-bind="sellerInn"></span>.</p>
+      <p>
+        Контакт: <a data-bind-mailto="supportEmail" href="mailto:solnishko.app@mail.ru">solnishko.app@mail.ru</a><span data-show="phone" hidden>, телефон: <span data-bind="contactPhone"></span></span>.
+      </p>
+
+      <h2>2. Какие данные обрабатываются</h2>
+      <p>
+        Пробная версия приложения «<span data-bind="productName">Весёлый алфавит</span>» не требует регистрации и не требует e-mail. Для запуска TRIAL
+        достаточно установить приложение.
+      </p>
+      <p>
+        При покупке полной версии и при восстановлении покупки может обрабатываться адрес электронной почты совершеннолетнего
+        покупателя.
+      </p>
+      <p>Оператор не заявляет и не осуществляет сбор следующих данных:</p>
+      <ul class="list">
+        <li>имени ребёнка;</li>
+        <li>даты рождения ребёнка;</li>
+        <li>e-mail ребёнка;</li>
+        <li>телефона ребёнка;</li>
+        <li>фотографии ребёнка;</li>
+        <li>записи голоса ребёнка;</li>
+        <li>геолокации;</li>
+        <li>контактов телефона;</li>
+        <li>IMEI;</li>
+        <li>рекламного идентификатора.</li>
+      </ul>
+      <p>
+        Реквизиты банковской карты приложение и оператор не получают. Оплата производится на стороне платёжного провайдера.
+      </p>
+
+      <h2>3. Цели обработки</h2>
+      <ul class="list">
+        <li>оформление и подтверждение покупки;</li>
+        <li>предоставление FULL;</li>
+        <li>выдача чека;</li>
+        <li>восстановление покупки;</li>
+        <li>обработка обращения пользователя;</li>
+        <li>выполнение требований закона.</li>
+      </ul>
+
+      <h2>4. Платёжный провайдер и инфраструктура</h2>
+      <p>
+        В обработке данных, необходимых для платежа и чека, участвует сервис Robokassa в объёме, определяемом его интерфейсом
+        и законодательством.
+      </p>
+      <p>Основная инфраструктура backend размещается в Yandex Cloud.</p>
+
+      <h2>5. Cookies и аналитика</h2>
+      <p>
+        Этот сайт не использует cookies, рекламные трекеры и внешние аналитические скрипты. Сайт содержит только публичную
+        информацию о продукте и правовые документы.
+      </p>
+
+      <h2>6. Обращения</h2>
+      <p>
+        По вопросам персональных данных напишите на
+        <a data-bind-mailto="supportEmail" href="mailto:solnishko.app@mail.ru">solnishko.app@mail.ru</a>.
+      </p>
+    </main>
+
+    <footer class="site-footer wrap" id="contacts">
+      <ul class="footer-nav">
+        <li><a href="vesely-alfavit.html">Весёлый алфавит</a></li>
+        <li><a href="offer.html">Публичная оферта</a></li>
+        <li><a href="privacy.html">Политика обработки персональных данных</a></li>
+        <li><a href="returns.html">Условия возврата</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+      <div class="seller">
+        <p>
+          <strong>Продавец:</strong>
+          <span data-bind="sellerName">Шимченко Надежда Владимировна</span>, <span data-bind="sellerStatus">плательщик налога на профессиональный доход</span>
+        </p>
+        <p data-show="inn" hidden><strong>ИНН:</strong> <span data-bind="sellerInn"></span></p>
+        <p>
+          <strong>E-mail поддержки:</strong>
+          <a data-bind-mailto="supportEmail" href="mailto:solnishko.app@mail.ru">solnishko.app@mail.ru</a>
+        </p>
+        <p data-show="phone" hidden><strong>Телефон:</strong> <span data-bind="contactPhone"></span></p>
+      </div>
+    </footer>
+    <script src="site-config.js"></script>
+    <script src="site.js"></script>
+  </body>
+</html>
